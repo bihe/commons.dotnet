@@ -1,1 +1,1 @@
-dotnet nuget push .\nupkgs\Commons.Api.*.nupkg --source Binggl.Packages --api-key mykey
+dotnet nuget push .\nupkgs\Binggl.Commons.Api.*.nupkg -s https://api.nuget.org/v3/index.json

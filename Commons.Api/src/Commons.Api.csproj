@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Binggl.Commons.Api</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Henrik Binggl</Authors>
+    <Description>Logic, components used for my aspnet.core projects.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/bihe/commons.dotnet/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/bihe/commons.dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bihe/commons.dotnet</RepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
   </PropertyGroup>
 
   <ItemGroup>

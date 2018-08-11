@@ -1,3 +1,17 @@
+# nuget.org feed
+
+Set api-key for use with ```dotnet nuget push```
+
+```
+nuget setapikey <api-key> -source nuget.org
+```
+
+Push to nuget.org
+
+```
+dotnet nuget push .\nupkgs\Binggl.Commons.Api.*.nupkg -s https://api.nuget.org/v3/index.json
+```
+
 # VSTS nuget feed
 
 https://stackoverflow.com/questions/48068329/push-a-nuget-package-to-vsts-with-net-cli
