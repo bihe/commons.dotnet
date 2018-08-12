@@ -7,7 +7,7 @@ namespace Commons.Api.Views
     {
         private readonly string[] _viewLocationPahts;
 
-        public FeaturesViewLocationExpander() 
+        public FeaturesViewLocationExpander()
         {}
 
         public FeaturesViewLocationExpander(string[] viewLocationPaths)
@@ -31,7 +31,9 @@ namespace Commons.Api.Views
             ViewLocationExpanderContext context,
             IEnumerable<string> viewLocations)
         {
-            return _viewLocationPahts;            
+            List<string> changedViewLocations = new List<string>(viewLocations);
+            changedViewLocations.AddRange(_viewLocationPahts);
+            return changedViewLocations;
         }
     }
 }

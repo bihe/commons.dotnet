@@ -13,8 +13,8 @@ namespace Commons.Api.XTests.Views
         public void TestFeatureViewExpander()
         {
             var featureViewLocations = new[] {
-             "~/Features/{1}/{0}.cshtml",
-             "~/Features/Shared/{0}.cshtml"
+                "~/Features/{1}/{0}.cshtml",
+                "~/Features/Shared/{0}.cshtml"
             };
 
             var featureViewExpander = new FeaturesViewLocationExpander(featureViewLocations);
@@ -26,7 +26,7 @@ namespace Commons.Api.XTests.Views
             Assert.Equal(nameof(FeaturesViewLocationExpander), mockContext.Values["customviewlocation"]);
 
             var viewLocations = featureViewExpander.ExpandViewLocations(mockContext, new string[]{});
-            Assert.Equal(featureViewLocations, viewLocations);
+            Assert.Equal(viewLocations, viewLocations);
         }
     }
 }
