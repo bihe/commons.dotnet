@@ -4,6 +4,7 @@ using Commons.Api.FlashScope;
 using Commons.Api.Messages;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 namespace Commons.Api.Middleware
@@ -58,6 +59,15 @@ namespace Commons.Api.Middleware
         public static IApplicationBuilder UseErrorHandling(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<ErrorHandling>();
+        }
+    }
+
+    public static class ErrorHandlingServiceCollectionExtension
+    {
+        public static void AddErrorHandling(this IServiceCollection services)
+        {
+            services.AddSingleton<IFlashService, MemoryFlashService>();
+            services.AddSingleton<IMessageIntegrity, HashedMessageIntegrity>();
         }
     }
 }
