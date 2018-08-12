@@ -26,7 +26,7 @@ namespace Commons.Api.XTests.Views
             Assert.Equal(nameof(FeaturesViewLocationExpander), mockContext.Values["customviewlocation"]);
 
             var viewLocations = featureViewExpander.ExpandViewLocations(mockContext, new string[]{});
-            Assert.Equal(viewLocations, viewLocations);
+            Assert.Equal(featureViewLocations, viewLocations);
         }
     }
 }
