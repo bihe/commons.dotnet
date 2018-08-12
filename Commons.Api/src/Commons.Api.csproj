@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Binggl.Commons.Api</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Henrik Binggl</Authors>
     <Description>Logic, components used for my aspnet.core projects.</Description>
     <PackageLicenseUrl>https://raw.githubusercontent.com/bihe/commons.dotnet/master/LICENSE</PackageLicenseUrl>
